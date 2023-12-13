@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h2>todo list</h2>
+      <div class="container">
+        <div id="wrapper">
+          <input type="text" id="todoinput" placeholder="task to be done" />
+          <button id="add-btn">add</button>
+        </div>
+
+        <div id="tasks"></div>
+      </div>
+      <div class="para">
+        this application will help you to make list of daily works and you can
+        also modify,delete,and mark as complete as your need <br />
+        <span
+          style="
+            color: rgb(5, 5, 32);
+            font-weight: bold;
+            font-size: 1.2em;
+            text-shadow: 2px 1px 2px white;
+          "
+          >to generate daily task Just type your task in above input box and
+          click on button</span
+        >
+      </div>
+      <p id="error">input cannot be empty</p>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/645784b0fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Flex:opsz@8..144&family=Roboto:ital,wght@0,400;1,100&family=Ubuntu&display=swap');
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, blue, violet)
+}
+
+.para {
+    position: absolute;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 1.5em
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 1px 1px black;
+    font-size: 2em;
+    text-align: center;
+}
+
+.app {
+    width: min(95vw, 500px);
+    position: absolute;
+    margin: auto;
+    margin-top: 90px;
+    left: 0;
+    right: 0;
+
+    top: 1.875em
+}
+
+.container {
+    padding: 2em 2.5em;
+    background-color: white;
+    box-shadow: 2px 2px 2px blue;
+    border-radius: 0.8em;
+}
+
+
+
+#wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1em
+}
+
+#wrapper input {
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: 0.9em;
+    padding: 0.5em 0.5em;
+    border: none;
+    border-bottom: 2px solid rgb(14, 3, 3);
+}
+
+#wrapper input:focus {
+    outline: none;
+    border-color: rgb(15, 101, 129);
+
+}
+
+#wrapper button {
+    position: relative;
+    border-radius: .5em;
+    background-color: rgb(48, 48, 166);
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#tasks {
+    margin-top: 1em;
+    border-radius: 0.5em;
+    width: 100%;
+    position: relative;
+    padding: 1em 0.5em;
+}
+
+.task {
+    background-color: rgb(250, 250, 248);
+    padding: 0.8em 1em;
+    display: grid;
+    grid-template-columns: 1fr 8fr 2fr 2fr;
+    gap: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(9, 3, 3, 0.361);
+}
+
+.task:not(:first-child) {
+    margin-top: 1em;
+}
+
+
+.task span {
+    font: 0.9em;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.task button {
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: blue;
+}
+
+.delete {
+    background-color: rgb(159, 45, 45);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(108, 96, 96)
+}
+
+#error {
+    text-align: center;
+    background-color: white;
+    color: red;
+    padding: 1em 0;
+    border-radius: .8em;
+    margin-top: 1.5em;
+    box-shadow: 1px 1px 2px red;
+    display: none;
+}
