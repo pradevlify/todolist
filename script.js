@@ -44,8 +44,8 @@ const addTask = () => {
   editButtons.forEach((editBtn) => {
     editBtn.onclick = (e) => {
       let targetElement = e.target;
-
-      if (!e.target.className == "edit") {
+      console.log(targetElement);
+      if (!(e.target.className == "edit")) {
         targetElement = e.target.parentElement;
         console.log(targetElement);
       }
